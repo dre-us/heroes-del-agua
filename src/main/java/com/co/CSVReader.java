@@ -6,8 +6,16 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Clase encargada de la lectura de las preguntas desde un archivo
+ */
 public class CSVReader {
 
+    /**
+     * Método encargado de leer las preguntas de un archivo csv
+     * @param archivo direccion del archivo que contiene las preguntas
+     * @return lista de preguntas
+     */
     public static List<Pregunta> readQuestionsFromCSV(String archivo) {
         List<Pregunta> preguntas = new ArrayList<>();
         String line;
